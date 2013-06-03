@@ -188,23 +188,23 @@ end
 # action sheets
 When /^I touch the "([^\"]*)" action sheet button$/ do |mark|
   quote = get_selector_quote(mark)
-  touch( "actionSheet threePartButton marked:#{quote}#{mark}#{quote}" )
+  touch( "actionSheet button marked:#{quote}#{mark}#{quote}" )
 end
 
 When /^I touch the (\d*)(?:st|nd|rd|th)? action sheet button$/ do |ordinal|
   ordinal = ordinal.to_i
-  touch( "actionSheet threePartButton tag:#{ordinal}" )
+  touch( "actionSheet button tag:#{ordinal}" )
 end
 
 # alert views
 When /^I touch the "([^\"]*)" alert view button$/ do |mark|
-  quote = get_selector_quote(mark) 
-  touch( "alertView threePartButton marked:#{quote}#{mark}#{quote}" )
+  quote = get_selector_quote(mark)
+  touch( "alertView button marked:#{quote}#{mark}#{quote}" )
 end
                                                                      
 When /^I touch the (\d*)(?:st|nd|rd|th)? alert view button$/ do |ordinal|
   ordinal = ordinal.to_i
-  touch( "alertView threePartButton tag:#{ordinal}" )
+  touch( "alertView button tag:#{ordinal}" )
 end
 
 # -- switch -- #
